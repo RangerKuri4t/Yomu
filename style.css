@@ -103,3 +103,64 @@ a {
     
 
 }
+
+.aboutMeDiv {
+    border-style: solid;
+    border-color: azure;
+    background-color: rgb(43, 41, 41);
+    height: 700px;
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+#Center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 250px;
+    border-width: 5px;
+}
+
+.ReadMe {
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3%;
+}
+
+#CenterTextClass {
+    background-color: rgb(53, 50, 50);
+    border-width: 5px;
+    border-style: solid;
+    border-color: azure;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+#gitHub {
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+#gitHub img {
+    max-width: 100%;
+}

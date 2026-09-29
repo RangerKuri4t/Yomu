@@ -1,0 +1,240 @@
+.top {
+    border-color: rgb(36, 35, 35);
+    background-color: rgb(36, 35, 35);
+    border-style: solid;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font: 15px Verdana, sans-serif;
+    padding-left: 2%
+    
+}
+body {
+    margin:0%;
+    background-color: rgb(42, 43, 44);
+    
+    
+    
+}
+
+
+a {
+  color: aliceblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+.top a:hover  {
+    color: gray;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+  
+}
+
+.top h2:hover {
+    color: gray;
+    cursor: pointer;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+}
+
+.searchBarDiv {
+    margin-left: auto;
+    
+}
+
+.searchBarDiv {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height:50px;
+    background-color: rgb(70, 67, 67);
+    color:aliceblue;
+    border-style: solid;
+    border-color: rgb(99, 95, 95);
+    
+    
+}
+#searchBar {
+    flex: 1;
+    border:none;
+    background: transparent;
+    color: aliceblue;
+    height: 100%;
+    
+}
+
+.languageOption  {
+    margin-right: 2%;
+
+    
+}
+
+
+.languageOption select {
+    width:150px;
+    height:40px;
+    background-color: rgb(70, 67, 67);
+    color:aliceblue;
+    border-style: solid;
+    border-color: rgb(99, 95, 95);
+    
+}
+
+.languageOption select:hover {
+    cursor: pointer;
+}
+
+#searchIcon {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-left: 2px solid;
+    border-color: rgb(104, 102, 102);
+    height: 80%;
+    border-width: 4px;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+    
+    
+    
+
+}
+
+.aboutMeDiv {
+    border-style: solid;
+    border-color: azure;
+    background-color: rgb(43, 41, 41);
+    height: 700px;
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+#Center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 250px;
+    border-width: 5px;
+}
+
+.ReadMe {
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3%;
+}
+
+#CenterTextClass {
+    background-color: rgb(53, 50, 50);
+    border-width: 5px;
+    border-style: solid;
+    border-color: azure;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+#mangaAboutDiv {
+    border-radius: 15px;
+    width: 500px;
+    height: 700px;
+    margin-left: 3%;
+    margin-top: 3%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("mangaCovers/csm_cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    
+
+
+}
+
+#imgCoverInDiv {
+    width:250px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#description {
+    color: aliceblue;
+    font: 18px Verdana, sans-serif;
+    width: 300px;
+}
+
+.chapter {
+    width:1000px;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-top: 3%;
+    
+}
+
+#mangaAboutPage {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#chapterList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+#chapterList hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgb(72, 74, 75);
+    margin: 0;
+}
+
+.imgInsideDiv {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+
+.imgInsideDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textInsideDiv {
+    margin-left: 15px;
+    color: rgb(156, 155, 155);
+
+}
+
+.chapter:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+

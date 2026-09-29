@@ -1,0 +1,218 @@
+.top {
+    border-color: rgb(36, 35, 35);
+    background-color: rgb(36, 35, 35);
+    border-style: solid;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font: 15px Verdana, sans-serif;
+    padding-left: 2%
+    
+}
+body {
+    margin:0%;
+    background-color: rgb(39, 38, 38);
+    
+    
+    
+}
+
+
+a {
+  color: aliceblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+.top a:hover  {
+    color: gray;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+  
+}
+
+.top h2:hover {
+    color: gray;
+    cursor: pointer;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+}
+
+.searchBarDiv {
+    margin-left: auto;
+    
+}
+
+.searchBarDiv {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height:50px;
+    background-color: rgb(70, 67, 67);
+    color:aliceblue;
+    border-style: solid;
+    border-color: rgb(99, 95, 95);
+    
+    
+}
+#searchBar {
+    flex: 1;
+    border:none;
+    background: transparent;
+    color: aliceblue;
+    height: 100%;
+    
+}
+
+.languageOption  {
+    margin-right: 2%;
+
+    
+}
+
+
+.languageOption select {
+    width:150px;
+    height:40px;
+    background-color: rgb(70, 67, 67);
+    color:aliceblue;
+    border-style: solid;
+    border-color: rgb(99, 95, 95);
+    
+}
+
+.languageOption select:hover {
+    cursor: pointer;
+}
+
+#searchIcon {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-left: 2px solid;
+    border-color: rgb(104, 102, 102);
+    height: 80%;
+    border-width: 4px;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+    
+    
+    
+
+}
+
+.aboutMeDiv {
+    border-style: solid;
+    border-color: azure;
+    background-color: rgb(43, 41, 41);
+    height: 700px;
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+#Center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 250px;
+    border-width: 5px;
+}
+
+.ReadMe {
+    color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3%;
+}
+
+#CenterTextClass {
+    background-color: rgb(53, 50, 50);
+    border-width: 5px;
+    border-style: solid;
+    border-color: azure;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+#gitHub {
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+#gitHub img {
+    max-width: 100%;
+}
+
+#listTitle {
+    color:aliceblue;
+    margin-left: 3%;
+}
+
+#line {
+    border: none;
+    border-top: 10px solid rgb(72, 74, 75);
+}
+
+#optionMangaOrNovel h2 {
+    color:aliceblue;
+    font: 20px Verdana, sans-serif;
+
+}
+#optionMangaOrNovel {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.oneMangaOption {
+    width: 180px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 25px;
+  
+    
+
+}
+
+.oneMangaOption img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.8s ease;
+}
+
+
+#mangaSelectBig {
+     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 10%;
+    margin-top: 1%;
+}
+
+.oneMangaOption img:hover {
+    transform: scale(1.05);
+}

@@ -13,6 +13,7 @@
 body {
     margin:0%;
     background-color: rgb(42, 43, 44);
+    font-family: Verdana, sans-serif;
     
     
     
@@ -149,18 +150,18 @@ a {
 #mangaAboutDiv {
     border-radius: 15px;
     width: 500px;
-    height: 700px;
     margin-left: 3%;
     margin-top: 3%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("mangaCovers/csm_cover.jpg");
+    background-color: #1e1e1e;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 12px;
+    padding: 25px;
+    font-family: Verdana, sans-serif;
     
 
 
@@ -168,17 +169,17 @@ a {
 
 #imgCoverInDiv {
     width:250px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 375px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 #description {
     color: aliceblue;
     font: 18px Verdana, sans-serif;
     width: 300px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .chapter {
@@ -238,3 +239,36 @@ a {
     opacity: 60%;
 }
 
+.mangaTitle {
+    color: aliceblue;
+    margin: 0;
+}
+.mangaAuthor {
+    color: gray;
+    margin: 0;
+}
+
+.tags{
+    display: flex;
+    gap:20px;
+
+}
+.tag {
+    color: aliceblue;
+    background-color: rgb(107, 109, 110);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: smaller;
+
+}
+
+.readButton {
+    background-color: aliceblue;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: rgb(22, 22, 22);
+}
+
+a{
+    color: aliceblue;
+}

@@ -12,7 +12,7 @@
 }
 body {
     margin:0%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photos/mangaBackground2.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.822)), url("photos/mangaBackground2.webp");
     
     
     
@@ -163,4 +163,140 @@ a {
 
 #gitHub img {
     max-width: 100%;
+}
+
+
+#csmPreviewDiv {
+    width: 1100px;
+    height: 400px;
+    border-style: solid;
+    background-color: rgb(25, 26, 27);
+    border-radius: 15px; 
+    margin-left: auto;
+    margin-right: 8%;
+    margin-top: 4%;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    
+    
+}
+
+#mangaReccomendedList {
+    width: 1200px;
+    height: 700px;
+    margin-top: 3%;
+    margin-right: 8%;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.singleMangaInReccomendedList {
+    width: 200px;
+}
+
+.singleMangaInReccomendedList img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.8s ease;
+}
+
+.singleMangaInReccomendedList a {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+   
+    
+    
+}
+
+.singleMangaInReccomendedList h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 8px 0 0 0;
+    font: 15px Verdana, sans-serif;
+}
+.singleMangaInReccomendedList img:hover {
+    transform: scale(1.05);
+}
+
+#csmPreviewDiv img {
+    transition: transform 0.8s ease;
+    border-radius: 15px;
+
+}
+
+#csmPreviewDiv img:hover {
+    transform: scale(1.05);
+
+}
+
+
+
+#csmPreviewDiv {
+    filter: brightness(0.9);
+}
+
+.previewImage {
+    flex: 1; /* takes all the remaining space */
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.previewInfo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers the text vertically */
+    padding: 0 40px;
+    color: white;
+}
+
+.previewTitle {
+    margin: 0;
+    font-size: 26px;
+}
+
+.previewAuthor {
+    margin: 4px 0 20px 0;
+    font-size: 20px;
+    color: #a8a8a8;
+}
+
+.previewChapter {
+    margin: 0;
+    color: #a8a8a8;
+}
+
+.previewChapter b {
+    color: white;
+}
+
+
+.previewInfo a {
+    font-size: 30px;
+}
+
+.previewInfo a:hover {
+    opacity: 0.6;
+}
+
+
+
+.hottestMangas {
+    margin-right: auto;
+    border-style: solid;
+    border-color: aliceblue;
+    height: 400px;
+    width: 200px;
 }

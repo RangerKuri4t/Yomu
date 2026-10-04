@@ -272,3 +272,15 @@ a {
 a{
     color: aliceblue;
 }
+
+#mangaCover {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;   /* centers it in the panel */
+}
+
+#mangaTitle { color: white; }
+#mangaAuthor { color: #a8a8a8; }
+#mangaDescription { color: white; }

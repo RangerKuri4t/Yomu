@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Manga site</title>
     <link rel="stylesheet" href="MangaAbout.css">
-
 </head>
 <body>
     <div class="top">
@@ -20,94 +19,35 @@
         <div>
             <h2>categories</h2>
         </div>
-        <div class="searchBarDiv"> 
+        <div class="searchBarDiv">
             <input type="search" id="searchBar" placeholder="Search manga/novel...">
             <button type="button" id="searchIcon">🔍︎</button>
         </div>
         <div class="languageOption">
             <select>
-                <option value="english" selected >Language - EN</option>
-                <option value="russian"  >Language - RU</option>
+                <option value="english" selected>Language - EN</option>
+                <option value="russian">Language - RU</option>
             </select>
         </div>
-        
     </div>
-    
-
-        
 
     <div id="mangaAboutPage">
         <div id="mangaAboutDiv">
-            <img src="mangaCovers/csm_cover.jpg" id="imgCoverInDiv">
-            <h1 class="mangaTitle">Chainsaw man</h1>
-            <p class="mangaAuthor">by Tatsuki Fujimoto</p>
-            <div class="tags">
-                <span class="tag">Action</span>
-                <span class="tag">Horror</span>
-                <span class="tag">Comedy</span>
-
-            </div>
+            <img src="" id="mangaCover" alt="">
+            <h1 id="mangaTitle"></h1>
+            <p id="mangaAuthor"></p>
+            <div class="tags" id="mangaGenres"></div>
             <div>
-                <p id="description">
-                    Denji is a broke young devil hunter living with his chainsaw devil dog, Pochita. After being betrayed and killed, he's brought back as Chainsaw Man, part human and part devil. Now working for a government devil-hunting team, all he wants is a normal life, but his new job is anything but normal.
-                </p>
+                <p id="mangaDescription"></p>
             </div>
-            <a href="http://127.0.0.1:5500/csmCh1.html" class="readButton">Start reading</a>
+            <a href="#" class="readButton" id="readButton">Start reading</a>
         </div>
-        <div id="chapterList">
-            <div class="chapter">
-                <div class="imgInsideDiv">
-                    <a href="http://127.0.0.1:5500/LnPageBook.html"><img src="photos/bannerCsm1.jpg"  ></a>
-                </div>
-                <div>
-                    <h1 class="textInsideDiv">#001</h1>
-                    <h2 class="textInsideDiv">Chainsaw and a dog</h2>
-                </div>
-            </div>
-            <hr>
-            <div class="chapter">
-                <div class="imgInsideDiv">
-                    <a href="http://127.0.0.1:5500/LnPageBook.html"><img src="photos/csmBanner2.png"  ></a>
-                </div>
-                <div>
-                    <h1 class="textInsideDiv">#002</h1>
-                    <h2 class="textInsideDiv">Pochita's whereabouts</h2>
-                </div>
-            </div>
-            <hr>
-            <div class="chapter">
-                <div class="imgInsideDiv">
-                    <a href="http://127.0.0.1:5500/LnPageBook.html"><img src="photos/csmBanner3.png"  ></a>
-                </div>
-                <div>
-                    <h1 class="textInsideDiv">#003</h1>
-                    <h2 class="textInsideDiv">Arrival on Tokyo</h2>
-                </div>
-            </div>
-            <hr>
-            <div class="chapter">
-                <div class="imgInsideDiv">
-                    <a href="http://127.0.0.1:5500/LnPageBook.html"><img src="photos/csmBanner4.png"  ></a>
-                </div>
-                <div>
-                    <h1 class="textInsideDiv">#004</h1>
-                    <h2 class="textInsideDiv">Power</h2>
-                </div>
-            </div>
-            <hr>
-            
-        </div>
-        
+
+        <div id="chapterList"></div>
     </div>
-        
-
-    
-    
-
-
-
-   
 
     <script src="script.js"></script>
+    <script src="mangaData.js"></script>
+    <script src="mangaPage.js"></script>
 </body>
 </html>

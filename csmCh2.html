@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Chainsaw man Ch2</title>
     <link rel="stylesheet" href="readPageStyle.css">
+    <link rel="icon" type="image/svg+xml" href="photos/logoYomu.svg">
 
 </head>
 <body>
@@ -18,18 +19,12 @@
         <div>
             <h2><a href="aboutMe.html">About me</a></h2>
         </div>
-        <div>
-            <h2>categories</h2>
-        </div>
         <div class="searchBarDiv"> 
             <input type="search" id="searchBar" placeholder="Search manga/novel...">
             <button type="button" id="searchIcon">🔍︎</button>
         </div>
-        <div class="languageOption">
-            <select>
-                <option value="english" selected >Language - EN</option>
-                <option value="russian"  >Language - RU</option>
-            </select>
+        <div class="siteLogo">
+            <a href="index.html"><img src="photos/logoYomu.svg" alt="Yomu logo"></a>
         </div>
         
     </div>
@@ -77,6 +72,10 @@
         <img src="chainSawManCh2/page2_25.webp" alt="shalom" class="center">
 
 
+    </div>
+    <div class="buttons">
+             <button type="button" onclick="goToPrevChapter()">Prev</button>
+             <button type="button" onclick="goToNextChapter()">Next</button>
     </div>
     <script src="script.js"></script>
 </body>

@@ -377,3 +377,15 @@ a {
     border-bottom: 3px solid white; /* optional underline */
     padding-bottom: 10px;
 }
+
+.siteLogo {
+    margin-right: 20px;
+}
+
+
+
+.siteLogo img {
+    width: 45px;
+    height: 45px;
+    display: block;
+}

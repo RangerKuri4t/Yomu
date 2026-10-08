@@ -20,3 +20,14 @@ function goToPrevChapter() {
     }
     
 }
+
+
+const searchBar = document.getElementById("searchBar");
+const searchButton = document.getElementById("searchIcon");
+
+searchButton.addEventListener("click" , function() {
+    const text = searchBar.value;
+    window.location.href = "search.html?q=" + text;
+
+
+});

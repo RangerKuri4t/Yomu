@@ -77,7 +77,18 @@ const mangas = {
         ]
     },
 
-    deathNote: {
+    tokyoghoul: {
+        title: "Tokyo Ghoul",
+        author: "Sui Ishida",
+        cover: "mangaCovers/tokyoGhoul_cover.jpg",
+        genres: ["Dark Fantasy", "Horror", "Action"],
+        description: "College student Ken Kaneki barely survives a date with a ghoul, a creature that eats humans. After an emergency surgery turns him into a half-ghoul, he has to survive in a hidden world of ghouls while keeping his secret from his friends.",
+        chapters: [
+            
+        ]
+    },
+
+    deathnote: {
         title: "Death Note",
         author: "Tsugumi Ohba & Takeshi Obata",
         cover: "mangaCovers/deathNote_cover.jpg",
@@ -88,7 +99,7 @@ const mangas = {
         ]
     },
 
-    Doraemon: {
+    doraemon: {
         title: "Doraemon",
         author: "Fujiko F. Fujio",
         cover: "mangaCovers/Doraemon_cover.jpg",
@@ -525,6 +536,15 @@ const mangas = {
             { number: "#003", title: "READ 86",      thumb: "LnCovers/86Book3.jpg", link: "https://lightnovel.to/novel/86" }
 
         ]
+    },
+
+    kingdom: {
+        title: "Kingdom",
+        author: "Yasuhisa Hara",
+        cover: "mangaCovers/Kingdom_cover.png",
+        genres: ["Historical", "Action", "War"],
+        description: "In ancient China's Warring States era, the war orphan Xin dreams of becoming the greatest general under heaven. When he meets Ying Zheng, the young king of Qin, he joins his fight to unite all of China.",
+        chapters: []
     },
 
 

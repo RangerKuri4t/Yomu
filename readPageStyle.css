@@ -163,3 +163,73 @@ a {
 
 }
 
+
+
+/* ===== PHONE / SMALL SCREEN SUPPORT ===== */
+/* everything inside this block only runs on screens 768px wide or smaller (phones), desktop stays the same */
+@media (max-width: 768px) {
+
+    /* --- top bar (header) --- */
+    .top {
+        flex-wrap: wrap; /* phone: lets the header items go to a new line instead of going off screen */
+        gap: 5px 15px; /* phone: smaller space between header items */
+        padding: 0 10px; /* phone: small space on the left and right of the header */
+    }
+
+    .top h1 {
+        font-size: 24px; /* phone: smaller site name so it fits */
+        margin: 10px 0; /* phone: less empty space above and below the site name */
+    }
+
+    .top h2 {
+        font-size: 15px; /* phone: smaller menu links so they fit in one row */
+        margin: 10px 0; /* phone: less empty space above and below the menu links */
+    }
+
+    .searchBarDiv {
+        order: 10; /* phone: moves the search bar to the end of the header (its own row) */
+        width: 100%; /* phone: search bar takes the full width of the screen */
+        height: 40px; /* phone: a little shorter search bar */
+        margin: 0 0 10px 0; /* phone: space under the search bar */
+        box-sizing: border-box; /* phone: border is counted inside the width so it does not go off screen */
+    }
+
+    #searchBar {
+        min-width: 0; /* phone: lets the text box shrink so the search button stays on screen */
+    }
+
+    .siteLogo {
+        margin-left: auto; /* phone: pushes the logo to the right side of the first row */
+        margin-right: 0; /* phone: removes the extra right space so the logo fits */
+    }
+
+    .siteLogo img {
+        width: 35px; /* phone: smaller logo */
+        height: 35px; /* phone: smaller logo */
+    }
+
+    /* --- chapter reading page --- */
+    .menu h1 {
+        font-size: 20px; /* phone: smaller chapter title */
+        padding: 0 10px; /* phone: small space on the sides of the title */
+    }
+
+    .chaptersSelect {
+        padding: 0 10px; /* phone: small even space on the sides of the chapter menu */
+    }
+
+    .chaptersSelect select {
+        width: 100%; /* phone: chapter menu fits the screen */
+        max-width: 300px; /* phone: but never bigger than it is on desktop */
+    }
+
+    .buttons {
+        padding-right: 10px; /* phone: keeps the next/prev buttons close to the right edge */
+        margin: 10px 0; /* phone: space above and below the buttons */
+    }
+
+    .csmCh1 img {
+        max-width: 100%; /* phone: manga pages shrink to fit the screen width */
+        height: auto; /* phone: keeps the page shape so it does not get stretched */
+    }
+}

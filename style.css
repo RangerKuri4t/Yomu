@@ -389,3 +389,131 @@ a {
     height: 45px;
     display: block;
 }
+
+/* ===== PHONE / SMALL SCREEN SUPPORT ===== */
+/* everything inside this block only runs on screens 768px wide or smaller (phones), desktop stays the same */
+@media (max-width: 768px) {
+
+    /* --- top bar (header) --- */
+    .top {
+        flex-wrap: wrap; /* phone: lets the header items go to a new line instead of going off screen */
+        gap: 5px 15px; /* phone: smaller space between header items */
+        padding: 0 10px; /* phone: small space on the left and right of the header */
+    }
+
+    .top h1 {
+        font-size: 24px; /* phone: smaller site name so it fits */
+        margin: 10px 0; /* phone: less empty space above and below the site name */
+    }
+
+    .top h2 {
+        font-size: 15px; /* phone: smaller menu links so they fit in one row */
+        margin: 10px 0; /* phone: less empty space above and below the menu links */
+    }
+
+    .searchBarDiv {
+        order: 10; /* phone: moves the search bar to the end of the header (its own row) */
+        width: 100%; /* phone: search bar takes the full width of the screen */
+        height: 40px; /* phone: a little shorter search bar */
+        margin: 0 0 10px 0; /* phone: space under the search bar */
+        box-sizing: border-box; /* phone: border is counted inside the width so it does not go off screen */
+    }
+
+    #searchBar {
+        min-width: 0; /* phone: lets the text box shrink so the search button stays on screen */
+    }
+
+    .siteLogo {
+        margin-left: auto; /* phone: pushes the logo to the right side of the first row */
+        margin-right: 0; /* phone: removes the extra right space so the logo fits */
+    }
+
+    .siteLogo img {
+        width: 35px; /* phone: smaller logo */
+        height: 35px; /* phone: smaller logo */
+    }
+
+    /* --- home page layout --- */
+    .mainArea {
+        flex-direction: column; /* phone: puts the hottest list and the main content one under the other instead of side by side */
+        gap: 0; /* phone: removes the space between them (each part has its own margins) */
+    }
+
+    #mainContent {
+        order: -1; /* phone: shows the banner and recommended mangas first, hottest list after */
+        width: 100%; /* phone: main content takes the full screen width */
+    }
+
+    /* --- big chainsaw man banner --- */
+    #csmPreviewDiv {
+        width: auto; /* phone: banner fits the screen instead of being 1100px wide */
+        height: auto; /* phone: banner height grows with its content */
+        margin: 15px 10px 0 10px; /* phone: small even space around the banner */
+        flex-direction: column; /* phone: puts the text above the picture */
+    }
+
+    .previewInfo {
+        width: auto; /* phone: text area takes the full banner width */
+        padding: 15px; /* phone: smaller space around the text */
+    }
+
+    .previewTitle {
+        font-size: 22px; /* phone: smaller title */
+    }
+
+    .previewAuthor {
+        font-size: 16px; /* phone: smaller author name */
+        margin: 4px 0 10px 0; /* phone: less space under the author name */
+    }
+
+    .previewImage img {
+        width: 100%; /* phone: picture takes the full banner width */
+        height: 200px; /* phone: shorter picture */
+        object-fit: cover; /* phone: fills the box without stretching the picture */
+        display: block; /* phone: removes the small gap under the picture */
+    }
+
+    /* --- recommended manga grid --- */
+    #mangaReccomendedList {
+        width: auto; /* phone: grid fits the screen instead of being 1200px wide */
+        height: auto; /* phone: grid height grows with the number of mangas */
+        margin: 15px 10px 0 10px; /* phone: small even space around the grid */
+        gap: 12px; /* phone: smaller space between the covers */
+    }
+
+    .singleMangaInReccomendedList {
+        width: calc(50% - 6px); /* phone: 2 covers per row */
+    }
+
+    .singleMangaInReccomendedList a {
+        height: 240px; /* phone: shorter covers so they match the smaller width */
+    }
+
+    /* --- hottest list --- */
+    .hottestMangas {
+        width: 100%; /* phone: hottest list takes the full screen width */
+        height: auto; /* phone: list height grows with its content instead of 1100px */
+        margin: 30px 0 20px 0; /* phone: space above and below the list */
+        gap: 15px; /* phone: smaller space between the rows */
+    }
+
+    .lineStyle {
+        width: 300px; /* phone: line stays the same width as the manga rows */
+    }
+
+    /* --- about me page --- */
+    .aboutMeDiv {
+        width: auto; /* phone: box fits the screen instead of being 500px wide */
+        height: auto; /* phone: box height grows with the text */
+        margin: 0 10px 20px 10px; /* phone: small space on the sides and under the box */
+        padding-bottom: 20px; /* phone: space under the github logo inside the box */
+    }
+
+    .ReadMe {
+        font-size: 18px; /* phone: smaller text so it is easier to read */
+    }
+
+    #gitHub {
+        width: 150px; /* phone: smaller github box */
+    }
+}

@@ -299,3 +299,105 @@ a{
     height: 100%;
     object-fit: cover;
 }
+
+/* ===== PHONE / SMALL SCREEN SUPPORT ===== */
+/* everything inside this block only runs on screens 768px wide or smaller (phones), desktop stays the same */
+@media (max-width: 768px) {
+
+    /* --- top bar (header) --- */
+    .top {
+        flex-wrap: wrap; /* phone: lets the header items go to a new line instead of going off screen */
+        gap: 5px 15px; /* phone: smaller space between header items */
+        padding: 0 10px; /* phone: small space on the left and right of the header */
+    }
+
+    .top h1 {
+        font-size: 24px; /* phone: smaller site name so it fits */
+        margin: 10px 0; /* phone: less empty space above and below the site name */
+    }
+
+    .top h2 {
+        font-size: 15px; /* phone: smaller menu links so they fit in one row */
+        margin: 10px 0; /* phone: less empty space above and below the menu links */
+    }
+
+    .searchBarDiv {
+        order: 10; /* phone: moves the search bar to the end of the header (its own row) */
+        width: 100%; /* phone: search bar takes the full width of the screen */
+        height: 40px; /* phone: a little shorter search bar */
+        margin: 0 0 10px 0; /* phone: space under the search bar */
+        box-sizing: border-box; /* phone: border is counted inside the width so it does not go off screen */
+    }
+
+    #searchBar {
+        min-width: 0; /* phone: lets the text box shrink so the search button stays on screen */
+    }
+
+    .siteLogo {
+        margin-left: auto; /* phone: pushes the logo to the right side of the first row */
+        margin-right: 0; /* phone: removes the extra right space so the logo fits */
+    }
+
+    .siteLogo img {
+        width: 35px; /* phone: smaller logo */
+        height: 35px; /* phone: smaller logo */
+    }
+
+    /* --- manga / light novel info page --- */
+    #mangaAboutPage {
+        flex-direction: column; /* phone: puts the info box above the chapter list instead of side by side */
+        align-items: stretch; /* phone: both parts take the full screen width */
+        gap: 15px; /* phone: smaller space between the info box and the chapter list */
+    }
+
+    #mangaAboutDiv {
+        width: auto; /* phone: info box fits the screen instead of being 500px wide */
+        margin: 10px 10px 0 10px; /* phone: small even space around the info box */
+        padding: 15px; /* phone: smaller space inside the info box */
+    }
+
+    #mangaCover {
+        width: 200px; /* phone: smaller cover picture */
+    }
+
+    .tags {
+        flex-wrap: wrap; /* phone: genre tags go to a new line if there are too many */
+        justify-content: center; /* phone: keeps the tags centered */
+        gap: 10px; /* phone: smaller space between the tags */
+    }
+
+    /* --- chapter list --- */
+    #chapterList {
+        margin: 0 10px 20px 10px; /* phone: small even space around the chapter list */
+    }
+
+    .chapter {
+        width: 100%; /* phone: each chapter fits the screen instead of being 1000px wide */
+        margin: 10px 0 0 0; /* phone: removes the auto left margin so it starts at the left */
+        gap: 10px; /* phone: smaller space between the picture and the text */
+    }
+
+    .imgInsideDiv {
+        width: 120px; /* phone: smaller chapter picture */
+        height: 70px; /* phone: smaller chapter picture */
+        flex-shrink: 0; /* phone: picture keeps its size and does not get squished by the text */
+    }
+
+    .imgInsideDivLn {
+        width: 90px; /* phone: smaller light novel cover */
+        height: 135px; /* phone: smaller light novel cover */
+        flex-shrink: 0; /* phone: cover keeps its size and does not get squished by the text */
+    }
+
+    .textInsideDiv {
+        margin-left: 0; /* phone: removes extra left space next to the picture */
+    }
+
+    h1.textInsideDiv {
+        font-size: 20px; /* phone: smaller chapter number */
+    }
+
+    h2.textInsideDiv {
+        font-size: 15px; /* phone: smaller chapter title */
+    }
+}

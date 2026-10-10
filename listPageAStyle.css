@@ -237,3 +237,70 @@ a {
     text-align: center;
     margin: 8px 0 0 0;
 }
+
+/* ===== PHONE / SMALL SCREEN SUPPORT ===== */
+/* everything inside this block only runs on screens 768px wide or smaller (phones), desktop stays the same */
+@media (max-width: 768px) {
+
+    /* --- top bar (header) --- */
+    .top {
+        flex-wrap: wrap; /* phone: lets the header items go to a new line instead of going off screen */
+        gap: 5px 15px; /* phone: smaller space between header items */
+        padding: 0 10px; /* phone: small space on the left and right of the header */
+    }
+
+    .top h1 {
+        font-size: 24px; /* phone: smaller site name so it fits */
+        margin: 10px 0; /* phone: less empty space above and below the site name */
+    }
+
+    .top h2 {
+        font-size: 15px; /* phone: smaller menu links so they fit in one row */
+        margin: 10px 0; /* phone: less empty space above and below the menu links */
+    }
+
+    .searchBarDiv {
+        order: 10; /* phone: moves the search bar to the end of the header (its own row) */
+        width: 100%; /* phone: search bar takes the full width of the screen */
+        height: 40px; /* phone: a little shorter search bar */
+        margin: 0 0 10px 0; /* phone: space under the search bar */
+        box-sizing: border-box; /* phone: border is counted inside the width so it does not go off screen */
+    }
+
+    #searchBar {
+        min-width: 0; /* phone: lets the text box shrink so the search button stays on screen */
+    }
+
+    .siteLogo {
+        margin-left: auto; /* phone: pushes the logo to the right side of the first row */
+        margin-right: 0; /* phone: removes the extra right space so the logo fits */
+    }
+
+    .siteLogo img {
+        width: 35px; /* phone: smaller logo */
+        height: 35px; /* phone: smaller logo */
+    }
+
+    /* --- manga / light novel list pages --- */
+    #optionMangaOrNovel {
+        gap: 20px; /* phone: less space between the "Manga's" and "Light Novel's" links */
+    }
+
+    #optionMangaOrNovel h2 {
+        font-size: 16px; /* phone: smaller "Manga's" / "Light Novel's" links */
+    }
+
+    #mangaSelectBig {
+        padding: 0 10px; /* phone: small even space on the sides instead of 10% on the left */
+        margin-top: 15px; /* phone: space above the covers */
+        gap: 12px; /* phone: smaller space between the covers */
+    }
+
+    .oneMangaOption {
+        width: calc(50% - 6px); /* phone: 2 covers per row */
+    }
+
+    .oneMangaOption a {
+        height: 240px; /* phone: shorter covers so they match the smaller width */
+    }
+}

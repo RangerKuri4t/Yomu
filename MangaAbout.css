@@ -300,6 +300,37 @@ a{
     object-fit: cover;
 }
 
+/* ===== YOMU NAME + LOGO BOX (right side of the top bar) ===== */
+.brand {
+    display: flex; /* puts the Yomu name and the logo side by side */
+    align-items: center; /* lines up the name and the logo vertically */
+    gap: 12px; /* small space between the name and the logo */
+    padding: 0 15px; /* space inside the box around the name and the logo */
+    background-color: rgb(55, 53, 53); /* slightly lighter box so it looks different from the other buttons */
+    border: 2px solid rgb(99, 95, 95); /* border in the same color as the search bar border */
+    border-radius: 12px; /* rounded corners */
+}
+
+.brand h1 {
+    margin: 8px 0; /* less empty space above and below the name so the box is not too tall */
+    letter-spacing: 2px; /* spreads the letters a bit so the name looks more like a logo */
+}
+
+.brand .siteLogo {
+    margin-right: 0; /* the box already has space from the edge, so the logo does not need extra */
+}
+
+.brand .siteLogo img {
+    width: 40px; /* logo size */
+    height: 40px; /* logo size */
+    display: block; /* removes the small gap under the logo */
+}
+
+.searchBarDiv {
+    margin-right: 20px; /* space between the search bar and the right edge of the screen */
+}
+
+
 /* ===== PHONE / SMALL SCREEN SUPPORT ===== */
 /* everything inside this block only runs on screens 768px wide or smaller (phones), desktop stays the same */
 @media (max-width: 768px) {
@@ -312,7 +343,8 @@ a{
     }
 
     .top h1 {
-        font-size: 24px; /* phone: smaller site name so it fits */
+        font-size: 22px; /* phone: smaller site name so it fits */
+        letter-spacing: 0; /* phone: removes the extra space between the letters so the name fits */
         margin: 10px 0; /* phone: less empty space above and below the site name */
     }
 
@@ -333,12 +365,12 @@ a{
         min-width: 0; /* phone: lets the text box shrink so the search button stays on screen */
     }
 
-    .siteLogo {
-        margin-left: auto; /* phone: pushes the logo to the right side of the first row */
-        margin-right: 0; /* phone: removes the extra right space so the logo fits */
+    .brand {
+        padding: 0 8px; /* phone: smaller space inside the box */
+        gap: 8px; /* phone: smaller space between the name and the logo */
     }
 
-    .siteLogo img {
+    .brand .siteLogo img {
         width: 35px; /* phone: smaller logo */
         height: 35px; /* phone: smaller logo */
     }
